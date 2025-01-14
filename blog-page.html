@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="page about art of typography" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="/css/normalize.css"/>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet" />
-    <link rel="icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -23,10 +23,9 @@
     <header class="header">
       <div class="container header-wrapper">
         <div class="header-flex">
-          <a href="/index.html">
+          <a href="/index.html" class="header-logo">
             <img
-              class="header-logo"
-              src="/images/webp/pixmart-logo.webp"
+              src="./images/webp/pixmart-logo.webp"
               alt="Pixmart."
               width="107"
               height="20" />
@@ -81,14 +80,14 @@
         <h1 class="visually-hidden">Pixmart</h1>
         <div class="blog-box">
           <span class="typography-span">TYPOGRAPHY</span>
-          <h2 class="pages-title break">
+          <h2 class="pages-title">
             Mastering the Art of Typography:
             <span class="new-line">Tips for Eye-Catching Designs for 2024</span>
           </h2>
         </div>
         <div class="page-img">
           <img
-            src="/images/webp/blog-main-photo.webp"
+            src="./images/webp/blog-main-photo.webp"
             alt="group of people have a meating with presentation about statisctics"
             width="1080"
             height="414" />
@@ -100,7 +99,7 @@
           <div class="profile-person">
             <img
               class="person-img"
-              src="/images/webp/person-photo.webp"
+              src="./images/webp/person-photo.webp"
               alt="beautiful blond-hair woman"
               width="60"
               height="60" />
@@ -166,43 +165,47 @@
           </p>
           <ol class="article-list">
             <li class="article-flex">
-              <h3 class="blog-article-heading">
-                1. Understand Typeface Selection
-              </h3>
-              <p class="article-text">
-                The choice of typeface is foundational in setting the tone of
-                your design. Serif fonts, with their classic appeal, lend a
-                <span class="new-line">
-                  touch of elegance and formality, making them ideal for print
-                  media and official documents. Sans-serif fonts, on the other
-                </span>
-                hand, project a modern and clean look, perfect for digital
-                platforms. When selecting a typeface, consider the
-                <span class="new-line">
-                  message you wish to convey and the medium through which it
-                  will be communicated.
-                </span>
-              </p>
+              <div class="article-blog">
+                <h3 class="blog-article-heading">
+                  Understand Typeface Selection
+                </h3>
+                <p class="article-text">
+                  The choice of typeface is foundational in setting the tone of
+                  your design. Serif fonts, with their classic appeal, lend a
+                  <span class="new-line">
+                    touch of elegance and formality, making them ideal for print
+                    media and official documents. Sans-serif fonts, on the other
+                  </span>
+                  hand, project a modern and clean look, perfect for digital
+                  platforms. When selecting a typeface, consider the
+                  <span class="new-line">
+                    message you wish to convey and the medium through which it
+                    will be communicated.
+                  </span>
+                </p>
+              </div>
             </li>
             <li class="article-flex">
-              <h3 class="blog-article-heading">
-                2. Create a Typographic Hierarchy
-              </h3>
-              <p class="article-text">
-                A well-defined typographic hierarchy organizes information,
-                making it easier for readers to navigate through the
-                <span class="new-line">
-                  content. Use different font sizes, weights, and styles to
-                  differentiate between headings, subheadings, and body text.
-                </span>
-                This hierarchy not only improves readability but also adds
-                visual interest to your next future design.
-              </p>
+              <div class="article-blog">
+                <h3 class="blog-article-heading">
+                  Create a Typographic Hierarchy
+                </h3>
+                <p class="article-text">
+                  A well-defined typographic hierarchy organizes information,
+                  making it easier for readers to navigate through the
+                  <span class="new-line">
+                    content. Use different font sizes, weights, and styles to
+                    differentiate between headings, subheadings, and body text.
+                  </span>
+                  This hierarchy not only improves readability but also adds
+                  visual interest to your next future design.
+                </p>
+              </div>
             </li>
             <li class="article-box">
               <img
                 class="article-img"
-                src="/images/webp/article-photo.webp"
+                src="./images/webp/article-photo.webp"
                 alt="example of font usage in typography"
                 width="980"
                 height="462" />
@@ -212,16 +215,21 @@
               </div>
             </li>
             <li class="article-flex">
-              <h3 class="blog-article-heading">3. Experiment with Alignment</h3>
-              <p class="article-text">
-                While center and right alignments have their place, left-aligned
-                text is generally the most legible and comfortable for readers,
-                especially for longer passages. However, don’t shy away from
-                experimenting with different alignments in headings or callouts
-                to add dynamism to your layout.
-              </p>
-              <div class="article-flex">
-                <h3 class="blog-article-heading">4. Embrace White Space</h3>
+              <div class="article-blog">
+                <h3 class="blog-article-heading">Experiment with Alignment</h3>
+                <p class="article-text">
+                  While center and right alignments have their place,
+                  left-aligned text is generally the most legible and
+                  comfortable for readers, especially for longer passages.
+                  However, don’t shy away from experimenting with different
+                  alignments in headings or callouts to add dynamism to your
+                  layout.
+                </p>
+              </div>
+            </li>
+            <li class="article-flex">
+              <div class="article-blog">
+                <h3 class="blog-article-heading">Embrace White Space</h3>
                 <p class="article-text">
                   White space, or negative space, is a powerful tool in
                   typography. It helps in decluttering designs and allows each
@@ -229,18 +237,18 @@
                   significantly improve the overall balance and
                   <span class="new-line"> composition of your design. </span>
                 </p>
+                <blockquote class="blockquote">
+                  Typography is not just the art of arranging type but the craft
+                  of breathing life into characters, turning words into stories
+                  that captivate the soul.
+                </blockquote>
+                <p class="article-text">
+                  Typography is an art that speaks volumes beyond the mere
+                  letters on a surface. By applying these tips, designers can
+                  elevate their work from mere messages to powerful visual
+                  statements. Remember, mastering typography is a journe...
+                </p>
               </div>
-              <blockquote class="blockquote">
-                Typography is not just the art of arranging type but the craft
-                of breathing life into characters, turning words into stories
-                that captivate the soul.
-              </blockquote>
-              <p class="article-text">
-                Typography is an art that speaks volumes beyond the mere letters
-                on a surface. By applying these tips, designers can elevate
-                their work from mere messages to powerful visual statements.
-                Remember, mastering typography is a journe...
-              </p>
             </li>
           </ol>
         </article>
@@ -263,57 +271,57 @@
             </a>
           </div>
           <div class="blog-section-list">
-            <article class="blog-section-item">
-              <img
-                class="blog-img"
-                src="/images/webp/blog-dishes.webp"
-                alt="site about tasty dishes"
-                width="370"
-                height="272" />
-              <div class="blue-tag">
-                <span class="blue-tag-text">TAG</span>
-              </div>
-              <div class="blog-section-box">
-                <h4 class="blog-section-title">Best Dishes</h4>
-                <time class="blog-section-date" datetime="2024-03-15"
-                  >15 APRIL 2024</time
-                >
-              </div>
-            </article>
-            <article class="blog-section-item">
-              <img
-                class="blog-img"
-                src="/images/webp/blog-spa.webp"
-                alt="white-grey site with contacts"
-                width="370"
-                height="272" />
-              <div class="blue-tag">
-                <span class="blue-tag-text">TAG</span>
-              </div>
-              <div class="blog-section-box">
-                <h4 class="blog-section-title">Contact Us Lotus Spa</h4>
-                <time class="blog-section-date" datetime="2024-03-05"
-                  >5 MAY 2024</time
-                >
-              </div>
-            </article>
-            <article class="blog-section-item">
-              <img
-                class="blog-img"
-                src="/images/webp/blog-creative.webp"
-                alt="black creative blog"
-                width="370"
-                height="272" />
-              <div class="blue-tag">
-                <span class="blue-tag-text">TAG</span>
-              </div>
-              <div class="blog-section-box">
-                <h4 class="blog-section-title">Creative Blog</h4>
-                <time class="blog-section-date" datetime="2024-03-15"
-                  >20 JUNE 2024</time
-                >
-              </div>
-            </article>
+            <a class="blog-section-link" href="#">
+              <article class="blog-section-item">
+                <img
+                  class="blog-img"
+                  src="./images/webp/blog-dishes.webp"
+                  alt="site about tasty dishes"
+                  width="370"
+                  height="272" />
+                <span class="blue-tag">TAG</span>
+                <div class="blog-section-box">
+                  <h4 class="blog-section-title">Best Dishes</h4>
+                  <time class="blog-section-date" datetime="2024-03-15">
+                    15 APRIL 2024
+                  </time>
+                </div>
+              </article>
+            </a>
+            <a class="blog-section-link" href="#">
+              <article class="blog-section-item">
+                <img
+                  class="blog-img"
+                  src="./images/webp/blog-spa.webp"
+                  alt="white-grey site with contacts"
+                  width="370"
+                  height="272" />
+                <span class="blue-tag">TAG</span>
+                <div class="blog-section-box">
+                  <h4 class="blog-section-title">Contact Us Lotus Spa</h4>
+                  <time class="blog-section-date" datetime="2024-03-05">
+                    5 MAY 2024
+                  </time>
+                </div>
+              </article>
+            </a>
+            <a class="blog-section-link" href="#">
+              <article class="blog-section-item">
+                <img
+                  class="blog-img"
+                  src="./images/webp/blog-creative.webp"
+                  alt="black creative blog"
+                  width="370"
+                  height="272" />
+                <span class="blue-tag">TAG</span>
+                <div class="blog-section-box">
+                  <h4 class="blog-section-title">Creative Blog</h4>
+                  <time class="blog-section-date" datetime="2024-03-15">
+                    20 JUNE 2024
+                  </time>
+                </div>
+              </article>
+            </a>
           </div>
         </div>
       </section>
@@ -323,10 +331,9 @@
         <div class="container footer-info">
           <div class="footer-grid">
             <div class="footer-block">
-              <a href="/index.html">
+              <a class="footer-logo" href="/index.html">
                 <img
-                  class="footer-logo"
-                  src="/images/webp/footer-logo.webp"
+                  src="./images/webp/footer-logo.webp"
                   alt="Pixmart."
                   width="300"
                   height="50" />
@@ -338,7 +345,7 @@
             </div>
             <div class="footer-links-flex">
               <div class="footer-links">
-                <h6 class="footer-heading">Company</h6>
+                <h4 class="footer-heading">Company</h4>
                 <ul class="footer-list">
                   <li class="footer-item">
                     <a class="footer-text element" href="#">Homepage v1</a>
@@ -361,7 +368,7 @@
                 </ul>
               </div>
               <div class="footer-links">
-                <h6 class="footer-heading">Products</h6>
+                <h4 class="footer-heading">Products</h4>
                 <ul class="footer-list">
                   <li class="footer-item">
                     <a class="footer-text element" href="#">Website</a>
@@ -386,7 +393,7 @@
                 </ul>
               </div>
               <div class="footer-links">
-                <h6 class="footer-heading">Account</h6>
+                <h4 class="footer-heading">Account</h4>
                 <ul class="footer-list">
                   <li class="footer-item">
                     <a class="footer-text element" href="#">Your Cart</a>
@@ -413,36 +420,36 @@
           <div class="media-block">
             <ul class="media-list">
               <li class="media-item">
-                <a href="#" class="element">
-                  <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 64 64"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#twitter-icon" />
-                  </svg>
+                <a target="_blank" href="#" class="button-white-huge">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#twitter-icon" />
+                    </svg>
                 </a>
               </li>
               <li class="media-item">
-                <a href="#" class="element">
-                  <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 64 64"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#facebook-icon" />
-                  </svg>
+                <a target="“_blank”" href="#" class="button-white-huge">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#facebook-icon" />
+                    </svg>
                 </a>
               </li>
               <li class="media-item">
-                <a href="#" class="element">
-                  <svg
-                    width="64"
-                    height="64"
-                    viewBox="0 0 64 64"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="#telegram-icon" />
-                  </svg>
+                <a target="“_blank”" href="#" class="button-white-huge">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#telegram-icon" />
+                    </svg>
                 </a>
               </li>
             </ul>
@@ -1257,49 +1264,34 @@
 
       <symbol
         id="twitter-icon"
-        width="64"
-        height="64"
-        viewBox="0 0 64 64"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
         fill="none">
         <path
-          d="M1 8C1 4.13401 4.13401 1 8 1H56C59.866 1 63 4.13401 63 8V56C63 59.866 59.866 63 56 63H8C4.13401 63 1 59.866 1 56V8Z"
-          stroke="#1D3653"
-          stroke-opacity="0.17"
-          stroke-width="2" />
-        <path
-          d="M39.6441 26.1799C40.5012 25.6438 41.1425 24.7995 41.4483 23.8047C40.6429 24.3048 39.7618 24.657 38.8429 24.8463C37.569 23.4361 35.5505 23.0929 33.9155 24.0085C32.2804 24.9241 31.4335 26.8718 31.848 28.7632C28.549 28.5899 25.4754 26.9592 23.3921 24.277C22.3048 26.2394 22.8605 28.748 24.6618 30.0098C24.0104 29.9879 23.3735 29.8034 22.8041 29.4716C22.8041 29.4896 22.8041 29.5076 22.8041 29.5256C22.8045 31.5698 24.1813 33.3306 26.096 33.7357C25.4918 33.9077 24.858 33.9331 24.243 33.8098C24.7815 35.5579 26.3212 36.7555 28.0761 36.7912C26.6227 37.985 24.8277 38.6323 22.98 38.6292C22.6525 38.6297 22.3253 38.6099 22 38.5701C23.8763 39.8318 26.06 40.5015 28.2903 40.4991C31.3931 40.5214 34.375 39.2414 36.569 36.9453C38.763 34.6493 39.986 31.5289 39.9644 28.282C39.9644 28.0959 39.9603 27.9108 39.952 27.7267C40.7556 27.119 41.4491 26.3662 42 25.5036C41.2514 25.8508 40.4573 26.0788 39.6441 26.1799Z"
+          d="M19.6441 6.17993C20.5012 5.64375 21.1425 4.79948 21.4483 3.80474C20.6429 4.3048 19.7618 4.65705 18.8429 4.84626C17.569 3.43608 15.5505 3.09291 13.9155 4.0085C12.2804 4.92409 11.4335 6.87177 11.848 8.76323C8.54901 8.58991 5.47544 6.95924 3.3921 4.27698C2.30485 6.23938 2.86046 8.748 4.66182 10.0098C4.01043 9.98794 3.37348 9.80338 2.80409 9.47158C2.80409 9.48959 2.80409 9.5076 2.80409 9.52561C2.80447 11.5698 4.18125 13.3306 6.09599 13.7357C5.49179 13.9077 4.85802 13.9331 4.24304 13.8098C4.78153 15.5579 6.32121 16.7555 8.07611 16.7912C6.62265 17.985 4.82769 18.6323 2.98002 18.6292C2.65252 18.6297 2.32528 18.6099 2 18.5701C3.87627 19.8318 6.06002 20.5015 8.29028 20.4991C11.3931 20.5214 14.375 19.2414 16.569 16.9453C18.763 14.6493 19.986 11.5289 19.9644 8.28198C19.9644 8.09589 19.9603 7.9108 19.952 7.72671C20.7556 7.119 21.4491 6.36617 22 5.50359C21.2514 5.85083 20.4573 6.0788 19.6441 6.17993Z"
           fill="#0D0D15" />
       </symbol>
 
       <symbol
         id="facebook-icon"
-        width="64"
-        height="64"
-        viewBox="0 0 64 64"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
         fill="none">
         <path
-          d="M1 8C1 4.13401 4.13401 1 8 1H56C59.866 1 63 4.13401 63 8V56C63 59.866 59.866 63 56 63H8C4.13401 63 1 59.866 1 56V8Z"
-          stroke="#1D3653"
-          stroke-opacity="0.17"
-          stroke-width="2" />
-        <path
-          d="M22 32.0614C22.0012 37.011 25.5784 41.2255 30.437 42.0012V34.9692H27.9V32.0614H30.44V29.8478C30.3265 28.7989 30.6825 27.7536 31.4116 26.9953C32.1408 26.237 33.1674 25.8443 34.213 25.9238C34.9635 25.936 35.7122 26.0033 36.453 26.125V28.5992H35.189C34.7538 28.5418 34.3164 28.6864 33.9998 28.9923C33.6832 29.2981 33.5218 29.732 33.561 30.1718V32.0614H36.332L35.889 34.9702H33.561V42.0012C38.8155 41.1657 42.5001 36.3373 41.9455 31.014C41.3909 25.6908 36.7913 21.7361 31.4788 22.0151C26.1664 22.294 22.0008 26.7089 22 32.0614Z"
+          d="M2 12.0614C2.00116 17.011 5.5784 21.2255 10.437 22.0012V14.9692H7.9V12.0614H10.44V9.84783C10.3265 8.79895 10.6825 7.7536 11.4116 6.9953C12.1408 6.237 13.1674 5.84434 14.213 5.92382C14.9635 5.93601 15.7122 6.00327 16.453 6.12505V8.59919H15.189C14.7538 8.54184 14.3164 8.68644 13.9998 8.99226C13.6832 9.29807 13.5218 9.732 13.561 10.1718V12.0614H16.332L15.889 14.9702H13.561V22.0012C18.8155 21.1657 22.5001 16.3373 21.9455 11.014C21.3909 5.69076 16.7913 1.73612 11.4788 2.01508C6.16636 2.29404 2.00084 6.70893 2 12.0614Z"
           fill="#0D0D15" />
       </symbol>
 
       <symbol
         id="telegram-icon"
-        width="64"
-        height="64"
-        viewBox="0 0 64 64"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
         fill="none">
         <path
-          d="M1 8C1 4.13401 4.13401 1 8 1H56C59.866 1 63 4.13401 63 8V56C63 59.866 59.866 63 56 63H8C4.13401 63 1 59.866 1 56V8Z"
-          stroke="#1D3653"
-          stroke-opacity="0.17"
-          stroke-width="2" />
-        <path
-          d="M43.5468 22.4227C43.1374 22.1145 42.4944 22.0704 41.8295 22.3074H41.8285C41.1292 22.5565 22.0354 29.8277 21.2581 30.1247C21.1167 30.1684 19.882 30.5774 20.0092 31.4885C20.1227 32.3099 21.1151 32.6501 21.2362 32.6893L26.0905 34.165C26.4125 35.1168 27.5998 38.6283 27.8623 39.3785C28.0261 39.8462 28.293 40.4607 28.7608 40.5871C29.1713 40.7277 29.5796 40.5993 29.8438 40.4151L32.8116 37.9712L37.6025 41.2884L37.7166 41.349C38.0419 41.4769 38.3536 41.5409 38.6511 41.5409C38.8809 41.5409 39.1014 41.5026 39.3121 41.426C40.0299 41.1643 40.317 40.5571 40.347 40.4883L43.9256 23.974C44.144 23.092 43.8405 22.6432 43.5468 22.4227ZM30.3716 34.7553L28.734 38.6322L27.0965 33.786L39.6511 25.5475L30.3716 34.7553Z"
+          d="M23.5468 2.42273C23.1374 2.11452 22.4944 2.07042 21.8295 2.30739H21.8285C21.1292 2.55649 2.03537 9.82768 1.25808 10.1247C1.11671 10.1684 -0.118008 10.5774 0.00917513 11.4885C0.122712 12.3099 1.11507 12.6501 1.23625 12.6893L6.0905 14.165C6.41255 15.1168 7.59977 18.6283 7.86233 19.3785C8.02608 19.8462 8.293 20.4607 8.7608 20.5871C9.17128 20.7277 9.57957 20.5993 9.84376 20.4151L12.8116 17.9712L17.6025 21.2884L17.7166 21.349C18.0419 21.4769 18.3536 21.5409 18.6511 21.5409C18.8809 21.5409 19.1014 21.5026 19.3121 21.426C20.0299 21.1643 20.317 20.5571 20.347 20.4883L23.9256 3.97399C24.144 3.09199 23.8405 2.64323 23.5468 2.42273ZM10.3716 14.7553L8.73405 18.6322L7.0965 13.786L19.6511 5.54754L10.3716 14.7553Z"
           fill="#0D0D15" />
       </symbol>
 
